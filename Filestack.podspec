@@ -60,5 +60,8 @@ Pod::Spec.new do |s|
   s.ios.source_files = %w(Filestack/Platform/iOS/*.{h,m}).concat(shared_source_files)
   s.osx.source_files = %w(Filestack/Platform/Mac/*.{h,m}).concat(shared_source_files)
 
-  s.dependency 'AFNetworking', '~> 3.0'
+  s.dependency 'AFNetworking/Reachability', '~> 3.0'
+  s.dependency 'AFNetworking/Serialization', '~> 3.0'
+  s.dependency 'AFNetworking/Security', '~> 3.0'
+  s.dependency 'AFNetworking/NSURLSession', '~> 3.0'
 end
